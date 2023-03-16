@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.hello {
+  border: 26px solid blue;
+  background-color: #edf2ff;
+}
+.container-grid {
+  box-shadow: 0px 2px 18px 5px #888888;
+}
+h1 {
+  color: blue !important;
+  border-bottom: 1px solid #868e96 !important;
+  padding: 12px !important;
+}
+
+/* thiết kế cho màn hình laptop */
+@media screen and (min-width: 992px) {
+  .container-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .iteam-3 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+  }
+  .team {
+    border-right: 0;
+    border-left: 0;
+  }
+
+  .top {
+    border-top: 0;
+  }
+  /* thiết kế goals */
+  .goals {
+    display: flex;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .goals-left {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+  }
+  .goals-right {
+    width: 75%;
+  }
+  img {
+    width: 50%;
+  }
+  .teams {
+    display: grid;
+    grid-template-columns: 25% 75%;
+  }
+  .team-left {
+    display: flex;
+    justify-content: center;
+  }
+  .user {
+    width: 50%;
+  }
+  /* thiết kế time-line */
+  .time-line {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-column: 16px;
+    column-gap: 15px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+  .time-line-left {
+    background-color: #b197fc;
+    color: white;
+    border-radius: 50%;
+
+    border: 2px solid #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    margin: 0;
+    font-size: 24px;
+    width: 80%;
+  }
+
+  .time-line-right {
+    border-bottom: 1px dashed #748ffc;
+    padding-bottom: 8px;
+  }
+  /* Thiết kế phần scopes */
+  .scopes {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 24px;
+    justify-content: space-around;
+  }
+  /* thiết kế phần Primary */
+
+  .primary {
+    display: grid;
+    grid-template-columns: 25% 75%;
+    margin-right: 12px;
+  }
+}
+
+/* thiết kế cho màn hình Tablet */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .container-grid {
+    display: grid;
+  }
+
+  .bottom {
+    border-bottom: 1px solid blue;
+  }
+  .bottom-timeline {
+    border-bottom: 25px solid blue;
+    border-top: 1px solid blue;
+  }
+  img {
+    width: 10%;
+  }
+  .project:nth-of-type(1) {
+    order: 1;
+  }
+  .project:nth-of-type(2) {
+    order: 3;
+  }
+  .project:nth-of-type(3) {
+    order: 5;
+  }
+  .project:nth-of-type(4) {
+    order: 2;
+  }
+  .project:nth-of-type(5) {
+    order: 4;
+  }
+  /* thiết kế goals */
+  .goals-left {
+    display: flex;
+    justify-content: center;
+  }
+  .goals {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .scopes {
+    display: grid;
+    gap: 24px;
+    justify-content: space-around;
+  }
+  .user {
+    width: 10%;
+  }
+  /* thiết kế time-line */
+  .time-line {
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+  .time-line-left {
+    background-color: #b197fc;
+    color: white;
+    border-radius: 50%;
+
+    border: 2px solid #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    margin: 0;
+    font-size: 24px;
+    width: 8%;
+  }
+
+  .time-line-right {
+    border-bottom: 1px dashed #748ffc;
+    padding-bottom: 8px;
+  }
+  .team-left {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* thiết kế cho màn hình mobie */
+@media screen and (max-width: 768px) {
+  .container-grid {
+    display: grid;
+  }
+  .bottom {
+    border-bottom: 1px solid blue;
+  }
+  .bottom-timeline {
+    border-bottom: 25px solid blue;
+    border-top: 1px solid blue;
+  }
+  img {
+    width: 10%;
+  }
+  .user {
+    width: 10%;
+  }
+  /* thiết kế goals */
+  .goals-left {
+    display: flex;
+    justify-content: center;
+  }
+  .goals {
+    border-bottom: 1px solid #dee2e6;
+  }
+  .scopes {
+    display: grid;
+    gap: 24px;
+    justify-content: space-around;
+  }
+  /* thiết kế time-line */
+  .time-line {
+    padding-right: 16px;
+    padding-bottom: 16px;
+  }
+  .time-line-left {
+    background-color: #b197fc;
+    color: white;
+    border-radius: 50%;
+
+    border: 2px solid #495057;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    margin: 0;
+    font-size: 24px;
+    width: 20%;
+  }
+
+  .time-line-right {
+    border-bottom: 1px dashed #748ffc;
+    padding-bottom: 8px;
+  }
+  .team-left {
+    display: flex;
+    justify-content: center;
+  }
+  .project:nth-of-type(1) {
+    order: 1;
+  }
+  .project:nth-of-type(2) {
+    order: 3;
+  }
+  .project:nth-of-type(3) {
+    order: 5;
+  }
+  .project:nth-of-type(4) {
+    order: 2;
+  }
+  .project:nth-of-type(5) {
+    order: 4;
+  }
+}
